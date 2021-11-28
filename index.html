@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENITAN BUSINESS COMPANY</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./images/logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">ADMISSIONS</a></li>
+                    <li><a href="">PROGRAMMES</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Business Company</h1>
+            <p>Working with our management is the best experience in the world <br> Professional committed team.
+            </p>
+            <a href="" class="hero-btn">Visit Us To know More</a>
+        </div>
+    </section>
+
+
+    <!-- ------------JAVASCRIPT FOR TOGGLE MENU----- -->
+    <script>
+        var navLinks = document.querySelector("#navLinks");
+
+        function showmenu(){
+            navLinks.style.top = "0"
+        }
+        function hidemenu(){
+            navLinks.style.top = "-100vh"
+        }
+    </script>
+</body>
+</html>
